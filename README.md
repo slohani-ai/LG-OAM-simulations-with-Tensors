@@ -113,8 +113,8 @@ where xpixel = width, ypixel = height, dT = SLM resolution (typically 8e-6 m), a
 
 It only requires a single line of code to simulate everything.
 
-* Superposition Modes. [Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
-  * A single batch of superpostion of various modes
+\item 1 Superposition Modes. [Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
+        \item 1a A single batch of superpostion of various modes
     <img src="https://render.githubusercontent.com/render/math?math=\psi=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_2}\rangle%2B......%2B">
   
 ```sh
@@ -127,7 +127,7 @@ Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_
   - grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM,
   - save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
     
-* Simultaneous simulation for multple batches of superpostion modes
+   \item 1b Simultaneous simulation for multple batches of superpostion modes
 
 
 
