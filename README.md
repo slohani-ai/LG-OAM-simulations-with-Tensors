@@ -102,7 +102,21 @@ Please install libraries from the requirements.txt file
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```sh
+from utils.Imaging import Save
+from utils.Noise import Noise_Dist
+from source.OAM_Intensity_Phase import LG_Lights_Tensorflow
+
+lg = LG_Ligths_Tensorflow(xpixel,ypixel,dT,verbose), where xpixel = width, ypixel = height, dT = SLM resolution (typically 8e-6 m), and versbose is False as default.
+```
+It only requires a single line of code to simulate everything
+
+* Superpostion Modes
+```sh
+Intensity, Phase = lg.Superposition(p_l_array = p_and_l_set,alpha_array=alpha_list,\
+                                         w=0.00015,grating_period = 0,save_image=False)
+
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
