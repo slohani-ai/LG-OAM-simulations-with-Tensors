@@ -204,12 +204,12 @@ _For more examples, please refer to_ [Superposition Notebook](https://github.com
 
 
 
-<!-- ROADMAP -->
+<!-- ROADMAP 
 ## Roadmap
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
 
-
+-->
 
 <!-- CONTRIBUTING -->
 ## Contributing
