@@ -3,20 +3,13 @@
 *** that would make this better, please fork the repo and create a pull request.
 *** Thanks again!
 -->
-[![Contributors][contributors-shield]][https://github.com/slohani-ai]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/">
+    <img src="images/Image_1.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">project_title</h3>
