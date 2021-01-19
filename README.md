@@ -156,7 +156,9 @@ It only requires a single line of code to simulate everything.
      plt.tight_layout()
      plt.show()
      ```
-     <img src="images/readme_image_2.png" alt="Intensity" width="600" height="600">
+     <p align="center">
+     <img src="images/readme_image_2.png" alt="Intensity">
+     <p> 
      and Corresponding Phase masks at grating period = 20 are shown below,
      
      ```sh
@@ -170,26 +172,29 @@ It only requires a single line of code to simulate everything.
      plt.tight_layout()
      plt.show()
      ```
-     <img src="images/read_me_image_phase_mask.png" alt="Phase" width="600" height="600">
-     
+     <p align="center">
+     <img src="images/read_me_image_phase_mask.png" alt="Phase">
+     <p>
    
 - Non-superposition Modes. [Documentation: please see Non-Superposition_OAM_Tensors_GPU](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/NonSuperposition_OAM_Tensors_GPU.ipynb)
-  - Multiple non-superposition OAM modes
+  - Multiple non-superposition OAM modes simultaneously,
   ```sh
   Intensity, Phase = lg.Non_Superposition(p_l_array,w,
                                                  grating_period,save_image)
   ```
+
 - Noisy OAM Modes. (_for example 200 noisy superposition modes per clean OAM image_).
 ```sh
 intensity_with_gaussian = Noise_Dist().Guassian_Noise_Batch(intensity_list,mean=0.,std=1.,multiple=200,factor=5e5)
 ```
+  This also supports Gaussain_Noise, Possion_Noise, Gamma_Noise, Poisson_Noise_Batch and Gamma_Noise_Batch as well.
+
 - Saving Tensors as Images. (_for example saving 200 noisy superposition modes for each clean OAM images simultaneously_)
 ```sh
 Save().Save_Tensor_Image(intensity_with_gaussian)
 ```
 
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to_ [Superposition Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb) . [Non-Superposition Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/NonSuperposition_OAM_Tensors_GPU.ipynb)
 
 
 
@@ -223,18 +228,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
+Sanjaya Lohani - [@twitter_handle](https://twitter.com/slohani_ai) - slohani@mlphys.com/ slohani@tulane.edu
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8.](https://www.nature.com/articles/s42005-020-00444-9)
+* [Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614.](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611)
+* [Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190.](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180)
+
+
 
 
 
