@@ -50,11 +50,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -65,10 +63,10 @@
 
 Optical communication relies on the generation, transmission, and detection of states of light to encode and send information. In order to increase the transfer rate one of the most promising methods is making use of orbital angular momentum (OAM) states of light. However, a primary technical difficulty is the accurate classification of OAM value  detected at the receiver. This project explores the various ways to simulate LG-OAM states (with GPU) that can be easily applied to train/test any machine learning setups at the receiver in prior. Additionally, the code generates phase patterns that can be uploaded to a SLM in order to have the correspoinding spatial distribution at the receiver. Overall this provides the robust way to simulate Laguerre-Gauss OAM modes to be used in the real-world communication setups.
 
-Please cite the following (s) if you use any part of the code in your project:
-  * [Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8.](https://www.nature.com/articles/s42005-020-00444-9)
-  * [Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614.](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611)
-  * [Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190.](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180)
+Please cite the following(s) if you use any part of the code in your project:
+  * [Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8.](https://www.nature.com/articles/s42005-020-00444-9) --> [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:C51qFc_WR5AJ:scholar.google.com/&output=citation&scisdr=CgUjlrFTEJbmsPpa9ac:AAGBfm0AAAAAYAdf7ae6RJN7AD1VeBG2WbGkM5oOQ-Gb&scisig=AAGBfm0AAAAAYAdf7ZY3cZgOOaiQuiIsFR9hcyR9taLd&scisf=4&ct=citation&cd=-1&hl=en)
+  * [Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614.](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611) --> [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:RrMdVhDKCKgJ:scholar.google.com/&output=citation&scisdr=CgUjlrFTEJbmsPparxI:AAGBfm0AAAAAYAdftxKq_G8-4hcuM5qyoQY8evK7-ptD&scisig=AAGBfm0AAAAAYAdft8mhE12ihJJZ9JvpV5MTN7RCz4SQ&scisf=4&ct=citation&cd=-1&hl=en)
+  * [Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190.](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180) --> [BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:wAh2jImANhAJ:scholar.google.com/&output=citation&scisdr=CgUjlrFTEJbmsPpalcs:AAGBfm0AAAAAYAdfjcuqhuwk0TIWvbE8PgwQ2_HVjVRG&scisig=AAGBfm0AAAAAYAdfjQDyyiDoR8uRz-y8tdQjZJQWNme1&scisf=4&ct=citation&cd=-1&hl=en)
 
 Thank you!
 
