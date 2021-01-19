@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Optical communication relies on the generation, transmission, and detection of states of light to encode and send information. In order to increase the transfer rate one of the most promising methods is making use of orbital angular momentum (OAM) states of light. However, a primary technical difficulty is the accurate classification of OAM value  detected at the receiver. This project explores the various ways to simulate LG-OAM states (with GPU) that can be easily applied to train/test any machine learning setups at the receiver prior to the real-communication. Additionally, the code generates phase patterns that can be uploaded to a SLM in order to have the correspoinding spatial distribution at the receiver.
+Optical communication relies on the generation, transmission, and detection of states of light to encode and send information. In order to increase the transfer rate one of the most promising methods is making use of orbital angular momentum (OAM) states of light. However, a primary technical difficulty is the accurate classification of OAM value  detected at the receiver. This project explores the various ways to simulate LG-OAM states (with GPU) that can be easily applied to train/test any machine learning setups at the receiver in prior. Additionally, the code generates phase patterns that can be uploaded to a SLM in order to have the correspoinding spatial distribution at the receiver. Overall this provides the robust way to simulate Laguerre-Gauss OAM modes to be used in the real-world communication setups.
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
