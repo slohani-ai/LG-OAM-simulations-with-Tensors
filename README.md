@@ -113,23 +113,80 @@ where xpixel = width, ypixel = height, dT = SLM resolution (typically 8e-6 m), a
 
 It only requires a single line of code to simulate everything.
 
-- Superposition Modes. [Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
+- Superposition Modes. [Documentation: please see Superposition_OAM_Tensors_GPU](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
   1. A single batch of superpostion of various modes
     <img src="https://render.githubusercontent.com/render/math?math=\psi=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_2}\rangle%2B......%2B">
   
-    ```sh
-    Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_image)
-    ```
-    where, 
-      - p_l_array: array of size \[None,2\], where first column represents p-value and second column repesents l-value,
+     ```sh
+     Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_image)
+     ```
+  2. Simultaneous simulation for multple batches of superpostion modes
+     <img src="https://render.githubusercontent.com/render/math?math=\psi_1=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_2}\rangle%2B......%2B">;
+     <img src="https://render.githubusercontent.com/render/math?math=\psi_2=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_2}\rangle%2B......%2B">;
+     <img src="https://render.githubusercontent.com/render/math?math=\psi_3=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_2}\rangle%2B......%2B">
+  .. .. ..
+     ```sh
+      Intensity, Phase = lg.Superposition_Batch(p_l_array,alpha_array,w,grating_period,save_image)
+     ```
+     where, 
+     - p_l_array: Tensorflow tensor or Numpy array of size [None, 2] for a single batch and [Batch, No. of modes to be superposed per layer,2] for superposition_batch. In [None, 2] first column represents p-value and second column repesents l-value,
   alpha_array: an array or list representing mixture percentages of various modes,
-      - w = beam width at z = 0,
-      - grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM,
-      - save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
-    
-   2. Simultaneous simulation for multple batches of superpostion modes
+     - w = beam width at z = 0,
+     - grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM,
+     - save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
+     _for example the following simultaneously generates multiple superpostion OAM modes.
+     ```sh
+     p_set = np.random.randint(0,2,36) 
+     l_set = np.random.randint(-10,10,36)
+     p_and_l_set = np.stack([p_set,l_set],axis=1)
+     p_and_l_set = p_and_l_set.reshape(-1,3,2) #(batch, no. of oam modes to be superimposed, 2)
+     
+     alpha_array = np.ones([len(p_and_l_set),3,1])
 
+     lg.verbose=False
+     intensity_list, phase_list = lg.Superposition_Batch(p_l_array = p_and_l_set,alpha_array=alpha_array,\
+                                                 w=0.00015,grating_period = 0,save_image=False)
 
+     print ('Total size of SUP-OAM modes: ',len(intensity_list))
+
+     fig, ax = plt.subplots(nrows=3, ncols=4, figsize=(8,8))
+     for i, axi in enumerate(ax.flat):
+       axi.imshow(intensity_list[i])
+       axi.set_title(f'SUP-OAM {i}')
+     plt.tight_layout()
+     plt.show()
+     ```
+     <img src="images/readme_image_2.png" alt="Intensity" width="600" height="600">
+     and Corresponding Phase masks at grating period = 20 are shown below,
+     
+     ```sh
+     lg.verbose=False
+     intensity_list, phase_list = lg.Superposition_Batch(p_l_array = p_and_l_set,alpha_array=alpha_array,\
+                                                 w=0.00015,grating_period = 20,save_image=False)
+     fig, ax = plt.subplots(nrows=3, ncols=4, figsize=(8,8))
+     for i, axi in enumerate(ax.flat):
+     axi.imshow(phase_list[i])
+     axi.set_title(f'SUP-Phase {i}')
+     plt.tight_layout()
+     plt.show()
+     ```
+     <img src="images/read_me_image_phase_mask.png" alt="Phase" width="600" height="600">
+     
+   
+- Non-superposition Modes. [Documentation: please see Non-Superposition_OAM_Tensors_GPU](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/NonSuperposition_OAM_Tensors_GPU.ipynb)
+  - Multiple non-superposition OAM modes
+  ```sh
+  Intensity, Phase = lg.Non_Superposition(p_l_array,w,
+                                                 grating_period,save_image)
+  ```
+- Noisy OAM Modes. (_for example 200 noisy superposition modes per clean OAM image_).
+```sh
+intensity_with_gaussian = Noise_Dist().Guassian_Noise_Batch(intensity_list,mean=0.,std=1.,multiple=200,factor=5e5)
+```
+- Saving Tensors as Images. (_for example saving 200 noisy superposition modes for each clean OAM images simultaneously_)
+```sh
+Save().Save_Tensor_Image(intensity_with_gaussian)
+```
 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
