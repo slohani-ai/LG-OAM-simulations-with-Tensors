@@ -81,7 +81,6 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 Please install libraries from the requirements.txt file
-* npm
   ```sh
   pip install requirements.txt
   ```
