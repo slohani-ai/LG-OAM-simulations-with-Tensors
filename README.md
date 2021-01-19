@@ -65,10 +65,6 @@
 
 Optical communication relies on the generation, transmission, and detection of states of light to encode and send information. In order to increase the transfer rate one of the most promising methods is making use of orbital angular momentum (OAM) states of light. However, a primary technical difficulty is the accurate classification of OAM value  detected at the receiver. This project explores the various ways to simulate LG-OAM states (with GPU) that can be easily applied to train/test any machine learning setups at the receiver in prior. Additionally, the code generates phase patterns that can be uploaded to a SLM in order to have the correspoinding spatial distribution at the receiver. Overall this provides the robust way to simulate Laguerre-Gauss OAM modes to be used in the real-world communication setups.
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
 
 ### Built With
 
@@ -84,23 +80,24 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Please install libraries from the requirements.txt file
 * npm
   ```sh
-  npm install npm@latest -g
+  pip install requirements.txt
   ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors.git
    ```
+<!-- 
 2. Install NPM packages
    ```sh
    npm install
    ```
-
+-->
 
 
 <!-- USAGE EXAMPLES -->
