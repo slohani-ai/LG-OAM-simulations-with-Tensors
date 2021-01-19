@@ -113,21 +113,21 @@ where xpixel = width, ypixel = height, dT = SLM resolution (typically 8e-6 m), a
 
 It only requires a single line of code to simulate everything.
 
-1. Superposition Modes. [Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
-        1.1. A single batch of superpostion of various modes
+- Superposition Modes. [Notebook](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
+  1. A single batch of superpostion of various modes
     <img src="https://render.githubusercontent.com/render/math?math=\psi=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_2}\rangle%2B......%2B">
   
 ```sh
 Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_image)
 ```
   where, 
-  - p_l_array: array of size \[None,2\], where first column represents p-value and second column repesents l-value,
+      - p_l_array: array of size \[None,2\], where first column represents p-value and second column repesents l-value,
   alpha_array: an array or list representing mixture percentages of various modes,
-  - w = beam width at z = 0,
-  - grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM,
-  - save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
+      - w = beam width at z = 0,
+      - grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM,
+      - save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
     
-   1.2 Simultaneous simulation for multple batches of superpostion modes
+  2. Simultaneous simulation for multple batches of superpostion modes
 
 
 
