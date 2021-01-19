@@ -20,7 +20,8 @@
     <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/">View Demo</a>
+    <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb">Superposition OAM Tensors</a>
+  <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/NonSuperposition_OAM_Tensors-GPU.ipynb">Non-Superposition OAM Tensors</a>
     ·
     <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/issues">Report Bug</a>
     ·
