@@ -116,7 +116,7 @@ It only requires a single line of code to simulate everything.
 * [Superpostion Modes](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
   * A single batch of superpostion of various modes
   ```math
-  $\psi = \alpha_1 |LG_{0,1}^{\ell_1}\rangle + \alpha_2|LG_{0,1}^{\ell_2}\rangle+ \alpha_2|LG_{0,1}^{\ell_2}\rangle + ... ...$
+  \psi = \alpha_1 |LG_{0,1}^{\ell_1}\rangle + \alpha_2|LG_{0,1}^{\ell_2}\rangle+ \alpha_2|LG_{0,1}^{\ell_2}\rangle + ... ...
   ```
 ```sh
 Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_image)
