@@ -107,16 +107,24 @@ from utils.Imaging import Save
 from utils.Noise import Noise_Dist
 from source.OAM_Intensity_Phase import LG_Lights_Tensorflow
 
-lg = LG_Ligths_Tensorflow(xpixel,ypixel,dT,verbose), where xpixel = width, ypixel = height, dT = SLM resolution (typically 8e-6 m), and versbose is False as default.
+lg = LG_Ligths_Tensorflow(xpixel,ypixel,dT,verbose)
 ```
-It only requires a single line of code to simulate everything
+where xpixel = width, ypixel = height, dT = SLM resolution (typically 8e-6 m), and versbose is False as default.
 
-* Superpostion Modes
+It only requires a single line of code to simulate everything.
+
+* [Superpostion Modes](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/Superposition_OAM_Tensors_GPU.ipynb)
+  * A single batch of superpostion of various modes
+  ```math
+  $\psi = \alpha_1 |LG_{0,1}^{\ell_1}\rangle + \alpha_2|LG_{0,1}^{\ell_2}\rangle+ \alpha_2|LG_{0,1}^{\ell_2}\rangle + ... ...$
+  ```
 ```sh
-Intensity, Phase = lg.Superposition(p_l_array = p_and_l_set,alpha_array=alpha_list,\
-                                         w=0.00015,grating_period = 0,save_image=False)
-
+Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_image)
 ```
+# Simultaneous simulation for multple batches of superpostion modes
+
+where p_l_array
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
