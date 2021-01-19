@@ -232,8 +232,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Sanjaya Lohani - [@twitter_handle](https://twitter.com/slohani_ai) . slohani@mlphys.com / slohani@tulane.edu
-Ryan T. Glasser - [@twitter_handle](https://twitter.com/GlasserPhysics) . rglasser@tulane.edu
+- Sanjaya Lohani - [@twitter_handle](https://twitter.com/slohani_ai) . slohani@mlphys.com / slohani@tulane.edu
+- Ryan T. Glasser - [@twitter_handle](https://twitter.com/GlasserPhysics) . rglasser@tulane.edu
 
 <!-- ACKNOWLEDGEMENTS 
 ## Acknowledgements
