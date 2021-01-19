@@ -15,7 +15,7 @@
   <h3 align="center">LG-OAM with Tensors (GPU/CPU)</h3>
 
   <p align="center">
-    project_description
+    Let's leverage the power of tensor operations in simulating LG-OAM intensity patterns and phase patterns for a Spatial Light Modulator (SLM). As the generated patterns are tensors, they are robust and can be directly fed into any machine learning frameworks.
     <br />
     <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/"><strong>Explore the docs »</strong></a>
     <br />
