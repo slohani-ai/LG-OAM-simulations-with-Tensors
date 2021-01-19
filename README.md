@@ -120,11 +120,12 @@ It only requires a single line of code to simulate everything.
 ```sh
 Intensity, Phase = lg.Superposition(p_l_array,alpha_array,w,grating_period,save_image)
 ```
-  where, p_l_array: array of size \[None,2\], where first column represents p-value and second column repesents l-value.
-  alpha_array: an array or list representing mixture percentages of various modes.
-  w = beam width at z = 0
-  grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM.
-  save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
+  where, 
+  - p_l_array: array of size \[None,2\], where first column represents p-value and second column repesents l-value,
+  alpha_array: an array or list representing mixture percentages of various modes,
+  - w = beam width at z = 0,
+  - grating_period: grating lines. Usful in implementing the simulated phase mask on the SLM,
+  - save_image: False as default. If True, simulated OAM modes are automatically saved as images in the same dir.
     
 * Simultaneous simulation for multple batches of superpostion modes
 
