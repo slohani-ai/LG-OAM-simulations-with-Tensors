@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/">
-    <img src="images/Image_1.png" alt="Logo" width="80" height="80">
+    <img src="images/Image_1.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">LG-OAM with Tensors (GPU/CPU)</h3>
@@ -65,6 +65,12 @@
 
 Optical communication relies on the generation, transmission, and detection of states of light to encode and send information. In order to increase the transfer rate one of the most promising methods is making use of orbital angular momentum (OAM) states of light. However, a primary technical difficulty is the accurate classification of OAM value  detected at the receiver. This project explores the various ways to simulate LG-OAM states (with GPU) that can be easily applied to train/test any machine learning setups at the receiver in prior. Additionally, the code generates phase patterns that can be uploaded to a SLM in order to have the correspoinding spatial distribution at the receiver. Overall this provides the robust way to simulate Laguerre-Gauss OAM modes to be used in the real-world communication setups.
 
+Please cite the following (s) if you use any part of the code in your project:
+  * [Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8.](https://www.nature.com/articles/s42005-020-00444-9)
+  * [Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614.](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611)
+  * [Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190.](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180)
+
+Thank you!
 
 ### Built With
 
@@ -157,7 +163,7 @@ It only requires a single line of code to simulate everything.
      plt.show()
      ```
      <p align="center">
-     <img src="images/readme_image_2.png" alt="Intensity">
+     <img src="images/readme_image_2.png" alt="Intensity",width="400" height="400">
      <p> 
      and Corresponding Phase masks at grating period = 20 are shown below,
      
@@ -173,7 +179,7 @@ It only requires a single line of code to simulate everything.
      plt.show()
      ```
      <p align="center">
-     <img src="images/read_me_image_phase_mask.png" alt="Phase">
+     <img src="images/read_me_image_phase_mask.png" alt="Phase",width="400" height="400">
      <p>
    
 - Non-superposition Modes. [Documentation: please see Non-Superposition_OAM_Tensors_GPU](https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/blob/main/NonSuperposition_OAM_Tensors_GPU.ipynb)
@@ -231,13 +237,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Sanjaya Lohani - [@twitter_handle](https://twitter.com/slohani_ai) - slohani@mlphys.com/ slohani@tulane.edu
 
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDGEMENTS 
 ## Acknowledgements
 
 * [Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8.](https://www.nature.com/articles/s42005-020-00444-9)
 * [Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614.](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611)
 * [Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190.](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180)
-
+-->
 
 
 
