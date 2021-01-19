@@ -3,7 +3,7 @@
 *** that would make this better, please fork the repo and create a pull request.
 *** Thanks again!
 -->
-[![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][https://github.com/slohani-ai]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
