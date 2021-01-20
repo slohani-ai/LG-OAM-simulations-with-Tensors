@@ -130,7 +130,7 @@ It only requires a single line of code to simulate everything.
      <img src="https://render.githubusercontent.com/render/math?math=\psi_3=\alpha_1|LG_{0,1}^{\ell_1}\rangle%2B\alpha_2|LG_{0,1}^{\ell_2}\rangle %2B\alpha_2|LG_{0,1}^{\ell_3}\rangle%2B......%2B">
   .. .. ..
      ```sh
-      Intensity, Phase = lg.Superposition_Batch(p_l_array,alpha_array,w,grating_period,save_image)
+      Intensity, Phase = lg.Superposition_Batch(p_l_array, alpha_array, w, grating_period, save_image)
      ```
      where, 
      - p_l_array: Tensorflow tensor or Numpy array of size [None, 2] for a single batch and [Batch, No. of modes to be superposed per layer, 2] for superposition_batch. In [None, 2] first column represents p-value and second column repesents l-value,
