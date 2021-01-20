@@ -196,7 +196,6 @@ class LG_Lights_Tensorflow:
         phase_list = tf.TensorArray(dtype=tf.float64, size=1, dynamic_size=True)
 
         for i in range(len(p_l_array)):
-            tf.print(i)
             string_value = 'Modes_'
 
             for k in range(len(p_l_array[i])):
