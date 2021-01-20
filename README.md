@@ -169,7 +169,7 @@ It only requires a single line of code to simulate everything.
      lg.verbose=False
      intensity_list, phase_list = lg.Superposition_Batch(p_l_array=p_and_l_set, alpha_array=alpha_array,\
                                                  w=0.00015, grating_period=20, save_image=False)
-     fig, ax = plt.subplots(nrows=3, ncols=4, figsize= (8,8))
+     fig, ax = plt.subplots(nrows=3, ncols=4, figsize= (8, 8))
      for i, axi in enumerate(ax.flat):
      axi.imshow(phase_list[i])
      axi.set_title(f'SUP-Phase {i}')
