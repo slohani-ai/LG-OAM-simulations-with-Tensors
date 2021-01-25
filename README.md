@@ -64,9 +64,9 @@
 Optical communication relies on the generation, transmission, and detection of states of light to encode and send information. In order to increase the transfer rate one of the most promising methods is making use of orbital angular momentum (OAM) states of light. However, a primary technical difficulty is the accurate classification of OAM value  detected at the receiver. This project explores the various ways to simulate LG-OAM states (with GPU) that can be easily applied to train/test any machine learning setups at the receiver in prior. Additionally, the code generates phase patterns that can be uploaded to a SLM in order to have the correspoinding spatial distribution at the receiver. Overall this provides the robust way to simulate Laguerre-Gauss OAM modes to be used in the real-world communication setups.
 
 Please cite the following(s) if you use any part of the code in your project:
-  * Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8 [nature-communications physics](https://www.nature.com/articles/s42005-020-00444-9)
-  * Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614. [OSA-Optics Letters](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611) . [arXiv](https://arxiv.org/abs/1806.07456)
-  * Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190. [OSA-Applied Optics](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180) . [arXiv](https://arxiv.org/abs/1806.06663)
+  * Lohani, S., Knutson, E. M., & Glasser, R. T. (2020). Generative machine learning for robust free-space communication. Communications Physics, 3(1), 1-8. [nature-communications physics](https://www.nature.com/articles/s42005-020-00444-9).
+  * Lohani, S., & Glasser, R. T. (2018). Turbulence correction with artificial neural networks. Optics letters, 43(11), 2611-2614. [OSA-Optics Letters](https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-11-2611) . [arXiv](https://arxiv.org/abs/1806.07456).
+  * Lohani, S., Knutson, E. M., O’Donnell, M., Huver, S. D., & Glasser, R. T. (2018). On the use of deep neural networks in optical communications. Applied optics, 57(15), 4180-4190. [OSA-Applied Optics](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-15-4180) . [arXiv](https://arxiv.org/abs/1806.06663).
 
 Thank you!
 
