@@ -1,6 +1,7 @@
 '''
 author: Sanjaya Lohani
 email: slohani@mlphys.com
+Started: 2017, updated to tensoflow 2.4 and published: 2020
 '''
 
 import tensorflow as tf
