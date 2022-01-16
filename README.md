@@ -16,7 +16,7 @@
 
   <p align="center">
     Sanjaya Lohani (https://sanjayalohani.com) . slohani@mlphys.com.
-  
+  <p align="center">
     Let's leverage the power of tensor operations in simulating LG-OAM intensity modes, and phase patterns for a Spatial Light Modulator (SLM). Being tensors, the generated patterns can be directly fed into any machine learning frameworks.
     <br />
     <a href="https://github.com/slohani-ai/LG-OAM-simulations-with-Tensors/"><strong>Explore the docs »</strong></a>
